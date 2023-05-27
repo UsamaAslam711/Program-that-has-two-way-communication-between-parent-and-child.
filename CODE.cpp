@@ -1,22 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/types.h>
- 
-void main(int argc,char* argv[])
-{
-pid_t pid;
-int fd[2];
-if(pipe(fd)==-1)
-{
-  printf("Error in creating pipe\n");
-  return;
-}
- 
-int size=argc-1;
-pid=fork();
- 
- 
+
  
 if(pid>0)
 {
